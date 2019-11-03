@@ -3,37 +3,32 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
-        <title>Ejemplo de titulo pagina Fabian Holguin Guerr</title>
+        <title>OVI uso de editores web online para GIT/GITHUB, HTML5 y CSS3.</title>
     </head>
 
     <body>
+
         <div id="main_wrapper">
             <header>
                 <div id="main_title">
                     <img src="https://grupolarabida.org/wp-content/uploads/2017/02/logo14.jpg" alt="Logo de Unad" id="logo" />
                     <h1>UNAD</h1>
                     <h2>Universidad Abierta y a Distancia</h2>
-                    <h2>Universidad Abierta y a Distancia</h2>
+                    <h2>OVI uso de editores web online para GIT/GITHUB, HTML5 y CSS3.</h2>
+                    <h3>El presente Objeto virtual de información, pretende establecer los principales conceptos necesarios para el manejo adecuado de un editor web entre distintos aplicativos webs online se determina lo básico par a su manejo y comprensión de tal manera que se note la importancia de su uso para cualquier desarrollador o programador web. </h3>
                 </div>
                 
                 <nav>
                     <ul>
                         <li><a title="Opcion 1" href="#">Objetivo General</a></li>
                         <li><a title="Opcion 2" href="#">Objetivos Especificos</a></li>
-                        <li><a title="Opcion 3" href="#">Opción 3</a></li>
-                        <li><a title="Opcion 4" href="#">Opción 4</a></li>
-                        <li><a title="Opcion 5" href="#">Opción 5</a></li>
+                        <li><a title="Opcion 2" href="#">Participantes</a></li>
+                     
                     </ul>
                 </nav>
             </header>
             
-            <div id="banner_image">
-                <div id="banner_description">
-                    Reflections on my holiday in the United States...
-                    <a href="#" class="red_button">See article <img src="images/small_arrow.png" alt="" /></a>
-                </div>
-            </div>
-            
+                     
             <section>
                 <article>
                     <h1>Objetivo específico 1: </h1>
@@ -54,33 +49,101 @@
                 </aside>
             </section>
             
-            <footer>
-                <div id="tweet">
-                    <h1>My last tweet</h1>
-                    <p>Twitter UNAD</p>
-                    <p>Visita el fabuloso Tweeter de la Universidad abierta y a distancia</p>
-                </div>
-                <iframe width="560" height="315" src="https://twitter.com/UniversidadUNAD" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div id="my_pictures">
-                    <h1>My pictures</h1>
-                    <p><img src="images/pic1.jpg" alt="Picture" /><img src="images/pic2.jpg" alt="Picture" /><img src="images/pic3.jpg" alt="Picture" /><img src="images/pic4.jpg" alt="Picture" /></p>
-                </div>
-                <div id="my_friends">
-                    <h1>My friends</h1>
+            <meta charset="utf-8">
+        
+            <link rel="stylesheet" href="css/nav.css">
+        
+                <script>
+			var el = document.getElementsByTagName("body")[0];
+			el.className = "";
+                </script>
+                <noscript>
+                    <!--[if IE]>
+                <link rel="stylesheet" href="css/ie.css">
+            <![endif]-->
+                </noscript>
+                <!--// Comienzo de la estructura del menú -->
+                <nav id="topNav">
                     <ul>
-                        <li><a href="#">Pupi the rabbit</a></li>
-                        <li><a href="#">Mr Baobab</a></li>
-                        <li><a href="#">Kaiwaii</a></li>
-                        <li><a href="#">Perceval.eu</a></li>
+                        <li><a href="#" title="Ir a la página de inicio">Inicio</a></li>
+                        <li>
+                            <a href="#" title="Ver las categorías y secciones del sitio web">Categorías</a>
+                            <ul>
+                                <li><a href="#" title="Sub menú 1">ir al Sub menú 1</a></li>
+                                <li><a href="#" title="Sub menú 2">Sub menú 2</a></li>
+                                <li><a href="#" title="Sub menú 3">Sub menú 3</a></li>
+                                <li><a href="#" title="Sub menú 4">Sub menú 4</a></li>
+                                <li class="last"><a href="#" title="Sub menú 5">Sub menú 5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" title="Clic aquí para buscar">Buscar</a></li>
+                        <li><a href="#" title="Ir a la página web de contacto">Contacto</a></li>
+                        <li class="last"><a href="#" title="Ir a la página web de novedades">Novedades</a></li>
                     </ul>
-                    <ul>
-                        <li><a href="#">Ji</a></li>
-                        <li><a href="#">Super cucumber</a></li>
-                        <li><a href="#">Prince</a></li>
-                        <li><a href="#">Mr Fan</a></li>
-                    </ul>
+                </nav>
+                <div class="content">
+                    Aquí el resto del contenido de la página web.
                 </div>
-            </footer>
-        </div>
+                <!--// Inclusión de los archivos Javascript -->
+                <script src="js/jquery.js"></script>
+                <script src="js/modernizr.js"></script>
+                <script>
+			(function($){
+				var nav = $("#topNav");
+				nav.find("li").each(function() {
+					if ($(this).find("ul").length > 0) {
+						$("<span>").text("^").appendTo($(this).children(":first"));
+						$(this).mouseenter(function() {
+							$(this).find("ul").stop(true, true).slideDown();
+						});
+						$(this).mouseleave(function() {
+							$(this).find("ul").stop(true, true).slideUp();
+						});
+					}
+				});
+			})(jQuery);
+                </script>
+
+
+
+                <footer>
+                    <div id="tweet">
+                        <h1>My last tweet</h1>
+                        <p>Twitter UNAD</p>
+                        <p>Visita el fabuloso Tweeter de la Universidad abierta y a distancia</p>
+                        <li><a href="https://twitter.com/UniversidadUNAD" title="Sub menú 5">Sub menú 5</a></li>
+                      
+                    </div>
+                    <a class="twitter-timeline"
+                       data-lang="es"
+                       data-width="420"
+                       data-height="500"
+                       data-theme="light"
+                       data-link-color="#E95F28"
+                       data-chrome="nofooter noborders noheader"
+                       href="https://twitter.com/juksoto">Tweets by cubemediaco</a>
+                    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                    <div id="my_pictures">
+                        <h1>My pictures</h1>
+                        <p><img src="images/pic1.jpg" alt="Picture" /><img src="images/pic2.jpg" alt="Picture" /><img src="images/pic3.jpg" alt="Picture" /><img src="images/pic4.jpg" alt="Picture" /></p>
+                    </div>
+                    <div id="my_friends">
+                        <h1>My friends</h1>
+                        <ul>
+                            <li><a href="#">Pupi the rabbit</a></li>
+                            <li><a href="#">Mr Baobab</a></li>
+                            <li><a href="#">Kaiwaii</a></li>
+                            <li><a href="#">Perceval.eu</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Ji</a></li>
+                            <li><a href="#">Super cucumber</a></li>
+                            <li><a href="#">Prince</a></li>
+                            <li><a href="#">Mr Fan</a></li>
+                        </ul>
+                    </div>
+                </footer>
+</div>
     </body>
 </html>
